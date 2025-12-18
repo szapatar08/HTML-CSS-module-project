@@ -21,7 +21,7 @@ body {
     background-color: #fff;
 }
 
-header, footer, main #lessons, main #clients, main #unseen, main #numbers, main #design, main #costumers, main #marketing, main #demo {
+header, footer, main #lessons, main #clients, main #unseen, main #numbers, main #design, main #costumers, main #marketing, main #demo, footer {
     width: 80%;
     padding: 0 10%;
 }
@@ -46,6 +46,13 @@ header, footer, main #lessons, main #clients, main #unseen, main #numbers, main 
     background-color: #4CAF4F;
     color: #FFFFFF;
     padding: 10px 20px;
+}
+
+.green-button:hover {
+    background-color: #fff;
+    border: 2px solid #4CAF4F;
+    color: #4CAF4F;
+    padding: 8px 18px;
 }
 
 .heading {
@@ -258,3 +265,39 @@ main #demo a {
 }
 
 /*----Footer----*/
+
+footer {
+    grid-template-columns: 1fr 2fr;
+    background-color: #263238;
+    padding-top: 4%;
+    padding-bottom: 4%;
+}
+
+footer p, footer li a, footer h3 {
+    color: #fff;
+}
+
+footer #footer-social {
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+footer #footer-links {
+    justify-content: space-around;
+}
+
+footer #footer-links h3 {
+    margin-bottom: 20px;
+}
+
+footer #footer-links ul li {
+    margin-bottom: 10px;
+}
+
+footer #footer-links form input{
+    padding: 5px 15px;
+    border: none;
+    border-radius: 5px;
+    background-color: rgba(355, 355, 355, 0.3);
+    color: #fff;
+}
