@@ -21,7 +21,7 @@ body {
     background-color: #fff;
 }
 
-header, footer, main #lessons, main #clients {
+header, footer, main #lessons, main #clients, main #unseen, main #numbers {
     width: 80%;
     padding: 0 10%;
 }
@@ -46,6 +46,10 @@ header, footer, main #lessons, main #clients {
     background-color: #4CAF4F;
     color: #FFFFFF;
     padding: 10px 20px;
+}
+
+.heading {
+    font-size: 2.5rem;
 }
 
 /*----Header----*/
@@ -108,12 +112,9 @@ main #lessons #lessons-article .green-button {
 /*Clients*/
 main #clients {
     padding-top: 3%;
+    padding-bottom: 4%;
     grid-template-rows: 1fr 2fr;
     gap: 50px;
-}
-
-main #clients h2 {
-    font-size: 2.5rem;
 }
 
 main #clients #clients-clients, main #clients #clients-community {
@@ -139,4 +140,42 @@ main #clients #clients-community #manage div {
 
 main #clients #clients-community #manage h3 {
     font-size: 2rem;
+}
+
+/*Unseen*/ /*Design*/
+main #unseen {
+    grid-template-columns: 1fr 1fr;
+    padding-top: 3%;
+    padding-bottom: 4%;
+}
+
+main #unseen .flex {
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
+    gap: 40px;
+}
+
+main #unseen .flex a {
+    border-radius: 4px;
+}
+
+/*Numbers*/
+main #numbers {
+    grid-template-columns: 1fr 1fr;
+    padding-top: 3%;
+    padding-bottom: 4%;
+    background-color: #F5F7FA;
+}
+
+main #numbers .grid {
+    grid-template-columns: 1fr 1fr;
+}
+
+main #numbers h3 {
+    font-size: 2rem;
+}
+
+main #numbers .gray-font {
+    font-size: calc(1rem + 2px);
 }
