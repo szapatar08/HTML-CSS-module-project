@@ -1,0 +1,78 @@
+/*General settings*/
+* {
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    list-style: none;
+    color: #4D4D4D;
+    font-family: "Inter", sans-serif;
+}
+
+:root {
+    font-size: 14px;
+}
+
+body {
+    height: 100%;
+    width: 100%;
+    grid-template-rows: auto 3fr auto;
+}
+
+header, main, footer {
+    width: 80%;
+    padding: 0 10%;
+}
+
+.grid {
+    display: grid;
+}
+
+.flex {
+    display: flex;
+}
+
+.green-font {
+    color: #4CAF4F;
+}
+
+.gray-font {
+    color: #717171;
+}
+
+.green-button {
+    background-color: #4CAF4F;
+    color: #FFFFFF;
+    padding: 10px;
+}
+
+/*Header*/
+header {
+    padding-top: 2%;
+    padding-bottom: 2%;
+    grid-template-columns: 1fr 2fr 1fr;
+    background-color: #F5F7FA;
+}
+
+header .flex {
+    align-items: center;
+}
+
+nav ul {
+    width: 100%;
+    justify-content: space-between;
+}
+
+nav ul .selected {
+    font-weight: bold;
+}
+
+header #logs {
+    justify-content: end;
+    gap: 20px;
+}
+
+header #logs .green-button {
+    border-radius: 6px;
+}
+
+/*Main*/
