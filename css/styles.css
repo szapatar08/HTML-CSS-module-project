@@ -21,7 +21,7 @@ body {
     background-color: #fff;
 }
 
-header, footer, main #lessons, main #clients, main #unseen, main #numbers {
+header, footer, main #lessons, main #clients, main #unseen, main #numbers, main #design, main #costumers, main #marketing, main #demo {
     width: 80%;
     padding: 0 10%;
 }
@@ -143,20 +143,20 @@ main #clients #clients-community #manage h3 {
 }
 
 /*Unseen*/ /*Design*/
-main #unseen {
+main #unseen, main #design {
     grid-template-columns: 1fr 1fr;
     padding-top: 3%;
     padding-bottom: 4%;
 }
 
-main #unseen .flex {
+main #unseen .flex, main #design .flex {
     flex-direction: column;
     justify-content: center;
     align-items: start;
     gap: 40px;
 }
 
-main #unseen .flex a {
+main #unseen .flex a, main #design .flex a {
     border-radius: 4px;
 }
 
@@ -179,3 +179,82 @@ main #numbers h3 {
 main #numbers .gray-font {
     font-size: calc(1rem + 2px);
 }
+
+/*Costumers*/
+main #costumers {
+    width: 50%;
+    padding: 4% 25%;
+    background-color: #F5F7FA;
+}
+
+main #costumers h3 {
+    margin-top: 20px;
+}
+
+main #costumers #costumers-costumers {
+    margin-top: 50px;
+    justify-content: space-between;
+    align-items: center;
+}
+
+main #costumers .green-font {
+    font-size: 1.4rem;
+}
+
+/*Marketing*/
+main #marketing {
+    text-align: center;
+    padding-top: 4%;
+    padding-bottom: 4%;
+}
+
+main #marketing #marketing-heading {
+    width: 50%;
+    padding: 0 25%;
+}
+
+main #marketing #marketing-readmore {
+    margin-top: 50px;
+    width: 100%;
+    justify-content: space-between;
+}
+
+main #marketing #marketing-readmore div {
+    width: 20%;
+    padding: 2% 2%;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 20px;
+    background-color: #F5F7FA;
+    font-size: 1.4rem;
+    font-weight: bold;
+    border-radius: 8px;
+    box-shadow: 2px 2px 2px 2px #c0c0c0;
+}
+
+main #marketing #marketing-readmore div:hover {
+    background-color: #717171;
+    .gray-font {
+        color: #F5F7FA;
+    }
+}
+
+/*Demo*/
+main #demo {
+    width: 50%;
+    padding: 4% 25%;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    gap: 50px;
+}
+
+main #demo h2 {
+    font-size: 4.5rem;
+}
+
+main #demo a {
+    border-radius: 4px;
+}
+
+/*----Footer----*/
