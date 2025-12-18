@@ -1,4 +1,4 @@
-/*General settings*/
+/*----General settings----*/
 * {
     padding: 0;
     margin: 0;
@@ -10,6 +10,8 @@
 
 :root {
     font-size: 14px;
+    letter-spacing: 2px;
+    line-height: 1.4;
 }
 
 body {
@@ -19,7 +21,7 @@ body {
     background-color: #fff;
 }
 
-header, footer, main #lessons {
+header, footer, main #lessons, main #clients {
     width: 80%;
     padding: 0 10%;
 }
@@ -46,7 +48,7 @@ header, footer, main #lessons {
     padding: 10px 20px;
 }
 
-/*Header*/
+/*----Header----*/
 header {
     padding-top: 2%;
     padding-bottom: 2%;
@@ -58,6 +60,7 @@ header .flex {
     align-items: center;
 }
 
+/*Nav*/
 nav ul {
     width: 100%;
     justify-content: space-between;
@@ -67,6 +70,7 @@ nav ul .selected {
     font-weight: bold;
 }
 
+/*Log in and Sign up*/
 header #logs {
     justify-content: end;
     gap: 20px;
@@ -76,7 +80,8 @@ header #logs .green-button {
     border-radius: 6px;
 }
 
-/*Main*/
+/*----Main----*/
+/*Lessons*/
 main #lessons {
     background-color: #F5F7FA;
     padding-top: 3%;
@@ -98,4 +103,40 @@ main #lessons #lessons-article {
 
 main #lessons #lessons-article .green-button {
     border-radius: 4px;
+}
+
+/*Clients*/
+main #clients {
+    padding-top: 3%;
+    grid-template-rows: 1fr 2fr;
+    gap: 50px;
+}
+
+main #clients h2 {
+    font-size: 2.5rem;
+}
+
+main #clients #clients-clients, main #clients #clients-community {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 10px;
+}
+
+main #clients .gray-font {
+    font-size: 1.2rem;
+}
+
+main #clients #clients-clients #clients-imgs, main #clients #clients-community #manage {
+    width: 100%;
+    padding-top: 50px;
+    justify-content: space-between;
+}
+
+main #clients #clients-community #manage div {
+    width: 18%;
+}
+
+main #clients #clients-community #manage h3 {
+    font-size: 2rem;
 }
