@@ -16,9 +16,10 @@ body {
     height: 100%;
     width: 100%;
     grid-template-rows: auto 3fr auto;
+    background-color: #fff;
 }
 
-header, main, footer {
+header, footer, main #lessons {
     width: 80%;
     padding: 0 10%;
 }
@@ -42,7 +43,7 @@ header, main, footer {
 .green-button {
     background-color: #4CAF4F;
     color: #FFFFFF;
-    padding: 10px;
+    padding: 10px 20px;
 }
 
 /*Header*/
@@ -76,3 +77,25 @@ header #logs .green-button {
 }
 
 /*Main*/
+main #lessons {
+    background-color: #F5F7FA;
+    padding-top: 3%;
+    padding-bottom: 4%;
+    grid-template-columns: 2fr 1fr;
+}
+
+main #lessons h1 {
+    font-size: 4.5rem;
+}
+
+main #lessons #lessons-article {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
+    gap: 20px;
+}
+
+main #lessons #lessons-article .green-button {
+    border-radius: 4px;
+}
