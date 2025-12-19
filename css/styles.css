@@ -67,6 +67,16 @@ header {
     background-color: #F5F7FA;
 }
 
+header #header-img {
+    display: flex;
+    align-items: center;
+}
+
+header #header-img img {
+    height: auto;
+    width: 70%;
+}
+
 header .flex {
     align-items: center;
 }
@@ -116,6 +126,11 @@ main #lessons #lessons-article .green-button {
     border-radius: 4px;
 }
 
+main #lessons #lessons-img img {
+    height: auto;
+    width: 100%;
+}
+
 /*Clients*/
 main #clients {
     padding-top: 3%;
@@ -156,6 +171,11 @@ main #unseen, main #design {
     padding-bottom: 4%;
 }
 
+main #unseen #unseen-img img, main #design img {
+    height: auto;
+    width: 100%;
+}
+
 main #unseen .flex, main #design .flex {
     flex-direction: column;
     justify-content: center;
@@ -183,6 +203,8 @@ main #numbers h3 {
     font-size: 2rem;
 }
 
+
+
 main #numbers .gray-font {
     font-size: calc(1rem + 2px);
 }
@@ -202,6 +224,8 @@ main #costumers #costumers-costumers {
     margin-top: 50px;
     justify-content: space-between;
     align-items: center;
+    flex-wrap: wrap;
+    gap: 20px;
 }
 
 main #costumers .green-font {
@@ -257,7 +281,7 @@ main #demo {
 }
 
 main #demo h2 {
-    font-size: 4.5rem;
+    font-size: 4rem;
 }
 
 main #demo a {
@@ -282,6 +306,11 @@ footer #footer-social {
     justify-content: space-between;
 }
 
+footer #footer-social #footer-img img {
+    width: 75%;
+    height: auto;
+}
+
 footer #footer-links {
     justify-content: space-around;
 }
@@ -300,4 +329,78 @@ footer #footer-links form input{
     border-radius: 5px;
     background-color: rgba(355, 355, 355, 0.3);
     color: #fff;
+}
+
+/*Tablet responsive*/
+@media (max-width: 1024px) {
+    :root {
+        font-size: 12px;
+    }
+
+    nav ul{
+        flex-wrap: wrap;
+        gap: 20px;
+    }
+
+    header #logs {
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    main #clients #clients-community #manage h3 {
+        font-size: 1.7rem;
+    }
+
+    main #numbers {
+        grid-template-columns: 1fr;
+    }
+
+    main #numbers h2 {
+        font-size: 1.8rem;
+    }
+
+    main #numbers .grid {
+        margin-top: 20px;
+    }
+
+    main #numbers h3 {
+        font-size: 1.5rem;
+    }
+
+    main #numbers img {
+        width: 20%;
+        height: auto;
+    }
+
+    main #marketing #marketing-readmore div {
+        font-size: 1rem;
+    }
+
+    footer {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    footer #footer-links {
+        flex-wrap: wrap;
+        gap: 20px;
+    }
+}
+
+/*Phone responsive*/
+@media (max-width: 780px) {
+    :root {
+        font-size: 10px;
+    }
+
+    header #logs .green-button {
+        padding: 5px 10px;
+    }
+
+    main #clients #clients-community #manage h3 {
+        font-size: 1.4rem;
+    }
+
+    main #marketing #marketing-readmore div {
+        font-size: calc(1rem - 3px);
+    }
 }
